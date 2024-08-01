@@ -16,12 +16,13 @@
         <div class="header-div">
             <header>
                 <div>
-                    <i class="fa-solid fa-volume-xmark"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <i id="speaker-icon" class="fas fa-volume-up" onclick="toggleBGM()"></i>
                 </div>
             </header>
         </div>
-        <!-- <audio controls loop  src="魔法の杖.mp3"></audio> -->
+        <audio loop id="bgm">
+            <source src="魔法の杖.mp3" type="audio/mpeg">
+        </audio>
          <div class="overScroll-div">
             <div>
                 <div class="title-div">
@@ -38,6 +39,6 @@
             </div>
          </div>
     </div>
-
+    <script src="/js/bgm.js"></script>
 </body>
 </html>
