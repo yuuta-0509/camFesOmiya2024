@@ -49,3 +49,18 @@
 i::before {
     color: white;
 }
+.break-line {
+    display: inline;
+}
+
+
+.about-div {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+@media screen and (max-width: 600px){
+    .break-line {
+        display: block;
+    }
+}
