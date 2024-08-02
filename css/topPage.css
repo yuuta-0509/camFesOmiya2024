@@ -72,13 +72,26 @@ i::before {
     scroll-snap-type: y mandatory;
     height: 100vh;
   }
-  .area {
+.area {
     scroll-snap-align: start;
     height: 100vh;
-  }
-.under_background {
-    width: 100vw;
-    height: auto;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 0;
+}
+.image-container img {
+    width: 50vw;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .image-container {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100vw;
+    }
 }
