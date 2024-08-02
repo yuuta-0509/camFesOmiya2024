@@ -16,44 +16,54 @@
 </head>
 <body>
     <div id="all">
-        <div class="header-div">
+        <div class="header-div" >
             <header>
                 <div>
                     <ul>
+                        <li><img src="#" alt="ロゴ"></li>
                         <li><a href="#">企画一覧</a></li>
                         <li><a href="#">Web展示会</a></li>
                         <li><a href="#">フード</a></li>
                         <li><a href="#">タイムテーブル</a></li>
                         <li><a href="#">会場・アクセス</a></li>
+                        <li>
+                            <div>
+                                <i id="speaker-icon" class="fas fa-volume-up" onclick="toggleBGM()"></i>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-                <div>
-                    <i id="speaker-icon" class="fas fa-volume-up" onclick="toggleBGM()"></i>
                 </div>
             </header>
         </div>
         <audio loop id="bgm">
             <source src="public/魔法の扉は夜開く.mp3" type="audio/mpeg">
         </audio>
+        <a href="#top">
+            <div class="top"　>TOP↑</div>
+        </a>
         <div class="image-container">
             <img src="public/web 背景 画像 透過.png" alt="Image">
-            <img src="public/web 背景 画像 透過.png" alt="Image">
+            <img src="public/web 背景 画像 透過.png" alt="Image" class="mobile_none">
         </div>
         <div class="container">
             <section class="area">
                 <div>
-                    <div class="title-div">
+                    <div class="title-div" id="top">
                         <h2>NS高等学校・<span class="break-line">大宮キャンパスフェスティバル2024</span></h2>
                     </div>
                 </div>
             </section>
             <section class="area">
                 <div class="about-div">
-                    <div>
-                        <h3>キャンフェスとは？</h3>
-                        <h4></h4>
-                        <h3>2024大宮CPキャンフェステーマ「魔法魔術学校」のストーリー</h3>
-                        <h4></h4>
+                    <div class="about_in">
+                        <div class="about_text_div">
+                            <h3>キャンフェスとは？</h3>
+                            <h4>1年に1度各キャンパスで行われる生徒主体の文化祭イベントです</h4>
+                        </div>
+                        <div class="about_story_div">
+                            <h3>・・キャンフェステーマ「魔法魔術学校」のストーリー・・</h3>
+                            <h4>11月9日、いつも通り大宮CPに登校するとそこはなんと"魔法魔術学校「オグワーツ」"になっていた!!不気味な魔法に包まれたキャンパスで非日常感を味わおう!!</h4>
+                        </div>
                     </div>
                 </div>
             </section>
