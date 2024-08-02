@@ -4,8 +4,17 @@
     font-style: normal;
   }
    */
+/* .kaisei-decol-regular {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
 
-
+* {
+    font-family: "Kaisei Decol", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 #all {
     width: 100vw;
     height: 100vh;
@@ -24,9 +33,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Sawarabi Mincho", serif;
-    font-weight: 400;
-    font-style: normal;
     text-align: center;
 }
 .title-div h2 {
@@ -94,4 +100,8 @@ i::before {
     .image-container img {
         width: 100vw;
     }
+}
+a {
+    color: white;
+    text-decoration: none;
 }
