@@ -76,3 +76,9 @@ i::before {
     scroll-snap-align: start;
     height: 100vh;
   }
+.under_background {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
