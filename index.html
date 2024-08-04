@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/topPage.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Sawarabi+Mincho&family=Yuji+Mai&display=swap" rel="stylesheet">
@@ -17,30 +14,32 @@
 <body>
     <div id="all">
         <div class="header-div" >
-            <header>
-                <div>
-                    <ul>
-                        <li><img src="#" alt="ロゴ"></li>
-                        <li><a href="#">企画一覧</a></li>
-                        <li><a href="#">Web展示会</a></li>
-                        <li><a href="#">フード</a></li>
-                        <li><a href="#">タイムテーブル</a></li>
-                        <li><a href="#">会場・アクセス</a></li>
-                        <li>
-                            <div>
-                                <i id="speaker-icon" class="fas fa-volume-up" onclick="toggleBGM()"></i>
-                            </div>
-                        </li>
-                    </ul>
+            <nav>
+                <div class="logo">
+                    ロゴ
+                    <img src="#" alt="">
                 </div>
-            </header>
+                <ul class="nav-links">
+                  <li><a href="#">メインページ</a></li>
+                  <li><a href="#">企画一覧</a></li>
+                  <li><a href="#">web展示会</a></li>
+                  <li><a href="#">タイムテーブル</a></li>
+                  <li><a href="#">フード</a></li>
+                  <li><a href="#">マップ・アクセス</a></li>
+                  <li><div><i id="speaker-icon" class="fas fa-volume-up" onclick="toggleBGM()"></i></div></li>
+                  <li></li>
+                </ul>
+                <div class="burger">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
+              </nav>
         </div>
         <audio loop id="bgm">
             <source src="public/魔法の扉は夜開く.mp3" type="audio/mpeg">
         </audio>
-        <a href="#top">
-            <div class="top"　>TOP↑</div>
-        </a>
+        <div></div>
         <div class="image-container">
             <img src="public/web 背景 画像 透過.png" alt="Image">
             <img src="public/web 背景 画像 透過.png" alt="Image" class="mobile_none">
@@ -48,7 +47,7 @@
         <div class="container">
             <section class="area">
                 <div>
-                    <div class="title-div" id="top">
+                    <div class="title-div" >
                         <h2>NS高等学校・<span class="break-line">大宮キャンパスフェスティバル2024</span></h2>
                     </div>
                 </div>
@@ -75,8 +74,7 @@
           </div>
 
         </div>
-
     <script src="js/bgm.js"></script>
-    <script></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
